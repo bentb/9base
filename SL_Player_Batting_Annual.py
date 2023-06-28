@@ -18,10 +18,17 @@
 
 # # Introduction
 
+# In[ ]:
+
+
+# Install libraries
+pip install plotly==5.15.0
+
+
 # In[1]:
 
 
-#import general libraries
+# Import Libraries
 import numpy as np
 import pandas as pd
 
