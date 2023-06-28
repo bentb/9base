@@ -18,7 +18,7 @@
 
 # # Introduction
 
-# In[37]:
+# In[1]:
 
 
 #import general libraries
@@ -41,13 +41,13 @@ import plotly.figure_factory as ff
 
 # ## Streamlit
 
-# In[3]:
+# In[2]:
 
 
 import streamlit as st
 
 
-# In[46]:
+# In[3]:
 
 
 st.set_page_config(
@@ -65,13 +65,13 @@ st.set_page_config(
 
 # ## Load Data
 
-# In[47]:
+# In[4]:
 
 
 df = pd.read_csv('C:\\Users\\b7tbu\\JUPYTER PROJECTS\\ANALYTICO\\Data_Exports\\Player\\Batting\\EXPORT_annual.csv')
 
 
-# In[48]:
+# In[5]:
 
 
 df.head()
@@ -79,13 +79,13 @@ df.head()
 
 # ## Scatter Chart
 
-# In[49]:
+# In[6]:
 
 
 import plotly.express as px
 
 
-# In[50]:
+# In[7]:
 
 
 fig = px.scatter(
@@ -99,7 +99,7 @@ fig = px.scatter(
 )
 
 
-# In[51]:
+# In[8]:
 
 
 #st.plotly_chart(fig, theme="streamlit", use_container_width = True)
@@ -107,25 +107,25 @@ fig = px.scatter(
 
 # ## Filters
 
-# In[52]:
+# In[ ]:
 
 
 
 
 
-# In[53]:
+# In[ ]:
 
 
 
 
 
-# In[54]:
+# In[ ]:
 
 
 
 
 
-# In[55]:
+# In[ ]:
 
 
 
@@ -157,13 +157,13 @@ fig = px.scatter(
 
 # ## Columns
 
-# In[21]:
+# In[9]:
 
 
 col1, col2 = st.columns([3,1])
 
 
-# In[24]:
+# In[10]:
 
 
 col1.subheader("Scatter Chart")
@@ -175,17 +175,47 @@ col2.write(df)
 
 # ## Print Data
 
-# In[13]:
+# In[11]:
 
 
 from st_aggrid import AgGrid
 
 
-# In[14]:
+# In[12]:
 
 
 st.subheader('Raw data')
 AgGrid(df)
+
+
+# In[ ]:
+
+
+
+
+
+# In[ ]:
+
+
+
+
+
+# In[ ]:
+
+
+
+
+
+# In[ ]:
+
+
+
+
+
+# In[ ]:
+
+
+
 
 
 # In[ ]:
